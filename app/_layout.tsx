@@ -8,7 +8,7 @@ import { StatusBar } from 'expo-status-bar';
 import { useColorScheme } from 'nativewind';
 
 export {
-  // Catch any errors thrown by the Layout component.
+
   ErrorBoundary,
 } from 'expo-router';
 
@@ -18,7 +18,10 @@ export default function RootLayout() {
   return (
     <ThemeProvider value={NAV_THEME[colorScheme ?? 'light']}>
       <StatusBar style={colorScheme === 'dark' ? 'light' : 'dark'} />
-      <Stack />
+      <Stack>
+        <Stack.Screen name="index" options={{ headerShown: false }} />
+        <Stack.Screen name="(app)" options={{ headerShown: false }} />
+      </Stack>
       <PortalHost />
     </ThemeProvider>
   );
