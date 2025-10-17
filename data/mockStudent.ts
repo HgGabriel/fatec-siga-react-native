@@ -96,39 +96,134 @@ export const mockStudent: Student = {
 };
 
 export const mockActivities: Activity[] = [
+  // --- Atividades Concluídas (Antes de 12/10/2025) ---
   {
-    id: '1',
+    id: 'c1',
+    title: 'Entrega do Relatório - Parte 1',
+    subject: 'Engenharia de Software',
+    date: '2025-10-05',
+    type: 'assignment'
+  },
+  {
+    id: 'c2',
+    title: 'Prova P2 - Banco de Dados',
+    subject: 'Banco de Dados',
+    date: '2025-10-10',
+    type: 'exam'
+  },
+  {
+    id: 'c3',
+    title: 'Apresentação de Seminário',
+    subject: 'Redes de Computadores',
+    date: '2025-09-28',
+    type: 'presentation'
+  },
+
+  // --- Atividades para Hoje (12/10/2025) ---
+  {
+    id: 'h1',
+    title: 'Revisão para a Prova de PWB',
+    subject: 'Programação Web',
+    date: '2025-10-12',
+    type: 'assignment'
+  },
+  {
+    id: 'h2',
+    title: 'Estudo em Grupo - IA',
+    subject: 'Inteligência Artificial',
+    date: '2025-10-12',
+    type: 'presentation'
+  },
+  
+  // --- Atividades para Amanhã (13/10/2025) ---
+  {
+    id: 'a1',
+    title: 'Prova P3 - Programação Web',
+    subject: 'Programação Web',
+    date: '2025-10-13',
+    type: 'exam'
+  },
+  {
+    id: 'a2',
+    title: 'Início do Projeto de GPJ',
+    subject: 'Gestão de Projetos',
+    date: '2025-10-13',
+    type: 'assignment'
+  },
+
+  // --- Atividades para "Esta Semana" (14/10 a 18/10/2025) ---
+  {
+    id: 's1',
+    title: 'Entrega da Lista de Exercícios 5',
+    subject: 'Sistemas Operacionais',
+    date: '2025-10-15',
+    type: 'assignment'
+  },
+  {
+    id: 's2',
+    title: 'Apresentação do Protótipo',
+    subject: 'Engenharia de Software',
+    date: '2025-10-17',
+    type: 'presentation'
+  },
+  {
+    id: 's3',
+    title: 'Prova de Recuperação P2',
+    subject: 'Banco de Dados',
+    date: '2025-10-18',
+    type: 'exam'
+  },
+  {
+    id: 's4',
+    title: 'Tutorias de Redes',
+    subject: 'Redes de Computadores',
+    date: '2025-10-16',
+    type: 'assignment'
+  },
+
+  // --- Atividades Próximas (Depois de 18/10/2025) ---
+  {
+    id: 'p1',
     title: 'Prova P3 - Banco de Dados',
-    subject: 'BDD301',
+    subject: 'Banco de Dados',
     date: '2025-10-25',
     type: 'exam'
   },
   {
-    id: '2',
+    id: 'p2',
     title: 'Trabalho Final - Programação Web',
-    subject: 'PWB302',
+    subject: 'Programação Web',
     date: '2025-10-30',
     type: 'assignment'
   },
   {
-    id: '3',
+    id: 'p3',
     title: 'Apresentação Projeto - Engenharia de Software',
-    subject: 'EGS303',
+    subject: 'Engenharia de Software',
     date: '2025-11-05',
     type: 'presentation'
   },
   {
-    id: '4',
+    id: 'p4',
     title: 'Prova P3 - Redes de Computadores',
-    subject: 'RDC304',
+    subject: 'Redes de Computadores',
     date: '2025-11-10',
     type: 'exam'
   },
   {
-    id: '5',
+    id: 'p5',
     title: 'Entrega Projeto Final - Gestão de Projetos',
-    subject: 'GPJ305',
+    subject: 'Gestão de Projetos',
     date: '2025-11-15',
     type: 'assignment'
+  },
+  {
+    id: 'p6',
+    title: 'Feira de Projetos FATEC',
+    subject: 'Eventos',
+    date: '2025-11-28',
+    type: 'presentation'
   }
 ];
+export { Activity };
+
