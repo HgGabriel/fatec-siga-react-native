@@ -14,12 +14,12 @@ export default function AppLayout() {
         drawerContent={(props) => <CustomDrawerContent {...props} />}
         screenOptions={{
           headerShown: true,
-          drawerActiveTintColor: isDark ? '#3b82f6' : '#2563eb',
-          drawerInactiveTintColor: isDark ? '#9ca3af' : '#6b7280',
+          drawerActiveTintColor: '#d71921',
+          drawerInactiveTintColor: isDark ? '#999999' : '#737373',
           headerStyle: {
-            backgroundColor: isDark ? '#111827' : '#fff',
+            backgroundColor: isDark ? '#1a1a1a' : '#ffffff',
           },
-          headerTintColor: isDark ? '#fff' : '#000',
+          headerTintColor: isDark ? '#f0f0f0' : '#212121',
         }}
       >
         <Drawer.Screen

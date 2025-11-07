@@ -4,7 +4,7 @@ export const mockStudent: Student = {
   name: 'João Silva Santos',
   email: 'joao.santos@fatec.sp.gov.br',
   ra: '0050482311001',
-  profilePhoto: 'https://api.dicebear.com/7.x/avataaars/svg?seed=John',
+  profilePhoto: '',
   courseProgress: 68,
   subjects: [
     {

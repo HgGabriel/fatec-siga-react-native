@@ -104,10 +104,16 @@ export default function PerfilScreen() {
           </CardHeader>
           <CardContent className="items-center">
             <View className="relative">
-              <Image
-                source={{ uri: profilePhoto }}
-                className="h-40 w-40 rounded-full border-4 border-primary object-cover"
-              />
+              {profilePhoto ? (
+                <Image
+                  source={{ uri: profilePhoto }}
+                  className="h-40 w-40 rounded-full border-4 border-primary object-cover"
+                />
+              ) : (
+                <View className="h-40 w-40 rounded-full border-4 border-primary bg-muted object-cover items-center justify-center">
+                  <User className="text-primary" size={60} />
+                </View>
+              )}
               <Pressable
                 onPress={handlePhotoClick}
                 className="absolute bottom-1 right-1 h-12 w-12 items-center justify-center rounded-full bg-primary">
